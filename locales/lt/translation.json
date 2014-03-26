@@ -1,0 +1,16 @@
+{
+    "app": {
+        "selectlanguage": "Pasitinkite kalbą",
+        "english": "Anglų",
+        "lithuanian": "Lietuvių"
+    },
+
+    "login": {
+        "login" : "Prisijunkite",
+        "emailAddress" : "Email",
+        "password" : "Slaptažodis",
+        "remeber" : "Prisiminti",
+        "loginButton" : "Prisijungti",
+        "invalidLoginInformation": "Neteisingi prisijungimo duomenys"
+    }
+}

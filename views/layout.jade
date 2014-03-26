@@ -1,7 +1,21 @@
 doctype html
-html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
+html(lang="en_US")
+    head
+        title= title
+        link(rel='stylesheet', href='/stylesheets/libs/bootstrap/less/bootstrap.css')
+        link(rel='stylesheet', href='/stylesheets/style.css')
+    body
+        .btn-group
+            button(type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown") #{t('app.selectlanguage')}
+                span(class="caret")
+            ul(class="dropdown-menu" role="menu")
+                li
+                    a#lt(href='?setLng=lt-LT')= t('app.lithuanian')
+                li
+                    a#en(href='?setLng=en-US')= t('app.english')
+
+        block content
+
+        block scripts
+            script(src="/js/libs/jquery/jquery-1.11.0.js")
+            script(src="/js/libs/bootstrap/bootstrap.js")

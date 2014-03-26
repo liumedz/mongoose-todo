@@ -1,14 +1,6 @@
 module.exports = function (Todo) {
 
     /*
-     * GET home page.
-     */
-
-    var index = function (req, res) {
-        res.render('index', { title: 'Express' });
-    };
-
-    /*
      * Get all records
      */
 
@@ -69,7 +61,6 @@ module.exports = function (Todo) {
     }
 
     return{
-        index: index,
         getAll: getAll,
         get: get,
         post: post,

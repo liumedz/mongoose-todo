@@ -9,6 +9,9 @@
     "express": "3.5.0",
     "jade": "*",
     "less-middleware": "*",
-    "mongoose": "~3.8.8"
+    "mongoose": "~3.8.8",
+    "express-sessions": "~1.0.5",
+    "i18next": "~1.7.1",
+    "crypto": "0.0.3"
   }
 }

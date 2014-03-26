@@ -1,14 +1,6 @@
 module.exports = function (User) {
 
     /*
-     * GET home page.
-     */
-
-    var index = function (req, res) {
-        res.render('index', { title: 'Express' });
-    };
-
-    /*
      * Get all records
      */
 
@@ -37,13 +29,10 @@ module.exports = function (User) {
      */
 
     var post = function (req, res) {
-        var todo = new User({
-            content: req.body.content,
-            updated_at: Date.now()
-        });
+        var todo = new User(req.body);
 
-        todo.save(function (err, todo, count) {
-                res.send(todo);
+        todo.save(function (err, user, count) {
+                res.send(user);
             }
         );
     };
@@ -87,7 +76,6 @@ module.exports = function (User) {
     };
 
     return{
-        index: index,
         getAll: getAll,
         get: get,
         post: post,

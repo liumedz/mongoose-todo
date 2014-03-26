@@ -1,0 +1,15 @@
+{
+    "app": {
+        "selectlanguage": "Chose langauge",
+        "english": "English",
+        "lithuanian": "Lithuanian"
+    },
+    "login": {
+        "login": "Login",
+        "emailAddress": "Email address",
+        "password": "Password",
+        "remeber": "Remeber me",
+        "loginButton": "Login",
+        "invalidLoginInformation": "Invalid login information"
+    }
+}

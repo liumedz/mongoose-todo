@@ -1,0 +1,26 @@
+extends layout
+block content
+    .container
+        .col-md-4.col-md-offset-4.well
+            fieldset
+                legend= t('login.login')
+                form(role='form', method='POST', action='/login')
+                    .form-group
+                        label(for='email')= t('login.emailAddress')
+                        input#email.form-control(type='email', placeholder='Enter email', name='email', required)
+                        .form-group
+                            label(for='password')= t('login.password')
+                            input#password.form-control(type='password', placeholder='Password', name='password', required)
+                        .checkbox
+                            label
+                                input(type='checkbox')
+                                | #{t('login.remeber')}
+                        button.btn.btn-default(type='submit')= t('login.loginButton')
+                        if error
+                            p
+                                .alert.alert-danger #{error}
+
+
+
+
+

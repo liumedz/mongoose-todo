@@ -1,7 +1,21 @@
-{
-"name": {
-"first": "Firstnameexample",
-"last": "Lastnameexample"
-},
-"email": "name@example.com"
-}
+[
+    {
+        "name": {
+            "first": "Firstnameexample",
+            "last": "Lastnameexample"
+        },
+        "email": "firstname@example.com",
+        "password": "firstname",
+        "role": "admin"
+    },
+
+    {
+        "name": {
+            "first": "Liutauras",
+            "last": "Medziunas"
+        },
+        "email": "liumedz@gmail.com",
+        "password": "liumedz",
+        "role": "admin"
+    }
+]
