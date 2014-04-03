@@ -16,6 +16,15 @@ module.exports = function (User, crypto){
         res.render('login');
     };
 
+
+    /*
+     * GET login page.
+     */
+
+    var app = function (req, res) {
+        res.render('app');
+    };
+
     /*
      *  Login to page
      */
@@ -81,7 +90,8 @@ module.exports = function (User, crypto){
         onLogin: onLogin,
         onLogout: onLogout,
         page1: page1,
-        page2: page2
+        page2: page2,
+        app: app
     }
 }
 

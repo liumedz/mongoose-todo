@@ -11,6 +11,7 @@ module.exports = function(secureRoutes, db, crypto) {
         secureRoutes.get(['admin', 'user'], '/logout', mainRoutes.onLogout);
         secureRoutes.get(['admin'], '/page1', mainRoutes.page1);
         secureRoutes.get(['user'], '/page2', mainRoutes.page2);
+        secureRoutes.get(['*'], '/app', mainRoutes.app);
         secureRoutes.post(['*'], '/login', mainRoutes.onLogin);
 
         secureRoutes.get(['admin', 'user'], '/todos', todoRoutes.getAll);
